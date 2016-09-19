@@ -16,9 +16,30 @@ h1, h2{
   color: #777;
 }
 
+a{
+  text-decoration: none;
+}
+
+@mixin inner-shadow($x:1px, $y:1px, $blur:4px, $spread:1px, $color:rgba(#888, 0.3)){
+  // offset-x | offset-y | blur-radius | spread-radius | color
+  box-shadow: (-$x) $y $blur $spread $color inset,
+              $x (-$y) $blur $spread $color inset;
+}
+
+@mixin button ($color, $text-color:white) {
+  background-color: $color;
+  transition: background-color 0.5s;
+  transition: box-shadow 0.3s;
+  color: $text-color;
+  &:hover, &:focus {
+    background-color: darken($color, 3%);
+    @include inner-shadow;
+  }
+}
+
 main{
-  display: flex;
-  // flex-direction: row;
+  margin: 0 auto;
+  max-width: 60em;
 }
 
 ul, ul li{
@@ -104,47 +125,40 @@ ul, ul li{
 // }
 
 .js{
-  background-color: #fff400;
-  color: #555;
+  @include button(#fff400, #555);
   .legend{
     color: #777;
   }
 }
 .coffee{
-  background-color: #ffae08;
-  // color: #555;
-  color: white;
+  @include button(#ffae08, white);
   .legend{
     color: white;
   }
 }
 .database{
-  background-color: #920202;
-  // color: #555;
-  color: white;
+  @include button(#920202, white);
   .legend{
-    // color: #777;
     color: white;
   }
 }
 .server{
-  background-color: #561231;
+  @include button(#561231, white);
 }
 .environment{
-  background-color: #444;
-  color: #ddd;
+  @include button(#444, ddd);
 }
 .scss{
-  background-color: #319cc2;
+  @include button(#319cc2, white);
 }
 .shell{
-  background-color: #89e051;
+  @include button(#89e051, white);
   .legend{
     color: white;
   }
 }
 .icons{
-  background-color: #888;
+  @include button(#888, white);
 }
 
 #brunch{
@@ -153,13 +167,12 @@ ul, ul li{
 
 #externals{
   .box{
-    background-color: #5125cc;
-    // width: auto;
+    @include button(#5125cc, white);
     min-width: 18em;
     flex: 1 0 0;
   }
   .open-knowledge{
-    background-color: #339966;
+    @include button(#339966, white);
   }
   .placeholder{
     background-color: white;

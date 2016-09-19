@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "live-server .",
-    "build": "node-sass stack.scss > stack.css",
+    "build": "./scripts/build",
     "watch": "onchange stack.scss -- npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
