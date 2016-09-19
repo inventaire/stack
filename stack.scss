@@ -1,0 +1,177 @@
+body{
+  color: #222;
+}
+
+h1{
+  font-size: 2em;
+  margin: 0;
+}
+h2{
+  font-size: 1.6em;
+  margin: 1.5em 0 0.2em 0;
+}
+
+h1, h2{
+  text-align: center;
+  color: #777;
+}
+
+main{
+  display: flex;
+  // flex-direction: row;
+}
+
+ul, ul li{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+}
+
+.row-reverse{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.wrap{
+  flex-wrap: wrap;
+}
+
+.stretch{
+  align-self: stretch;
+}
+
+.space-around{
+  justify-content: space-around;
+}
+
+.push-down{
+  margin-top: auto;
+}
+
+.flex-1{ flex: 1; }
+.flex-2{ flex: 2; }
+.flex-3{ flex: 3; }
+
+#stack{
+  flex: 1;
+  display: flex;
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  // flex: 1;
+  white-space: nowrap;
+  padding: 1em;
+  text-align: center;
+  border-radius: 3px;
+  margin: 0.2em;
+  color: white;
+  background-color: #123456;
+  font-weight: bold;
+  &:not(.stretch):not(.flex-1){
+    // width: 12em;
+  }
+  .legend{
+    color: #ddd;
+    font-weight: normal;
+  }
+  &.wider{
+    // width: 15em;
+    flex: 1;
+  }
+}
+
+.red{ background-color: red }
+.blue{ background-color: blue }
+.yellow{ background-color: yellow }
+.magenta{ background-color: magenta }
+
+
+// #languages{
+//   width: 5em;
+// }
+
+.js{
+  background-color: #fff400;
+  color: #555;
+  .legend{
+    color: #777;
+  }
+}
+.coffee{
+  background-color: #ffae08;
+  // color: #555;
+  color: white;
+  .legend{
+    color: white;
+  }
+}
+.database{
+  background-color: #920202;
+  // color: #555;
+  color: white;
+  .legend{
+    // color: #777;
+    color: white;
+  }
+}
+.server{
+  background-color: #561231;
+}
+.environment{
+  background-color: #444;
+  color: #ddd;
+}
+.scss{
+  background-color: #319cc2;
+}
+.shell{
+  background-color: #89e051;
+  .legend{
+    color: white;
+  }
+}
+.icons{
+  background-color: #888;
+}
+
+#brunch{
+  margin-top: 1em;
+}
+
+#externals{
+  .box{
+    background-color: #5125cc;
+    // width: auto;
+    min-width: 18em;
+    flex: 1 0 0;
+  }
+  .open-knowledge{
+    background-color: #339966;
+  }
+  .placeholder{
+    background-color: white;
+  }
+}
+
+#languages{
+  margin: auto;
+  .row{
+    justify-content: space-around;
+    .box{
+      width: 7em;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "stack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server .",
+    "build": "node-sass stack.scss > stack.css",
+    "watch": "onchange stack.scss -- npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "~1.1.0",
+    "node-sass": "~3.10.0",
+    "onchange": "~3.0.2"
+  }
+}

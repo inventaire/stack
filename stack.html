@@ -1,0 +1,199 @@
+<head>
+  <title>inventaire stack</title>
+  <link rel="stylesheet" href="stack.css">
+</head>
+<body>
+  <main class="column wrap">
+    <h1>inventaire stack</h1>
+    <section id="languages" class="column">
+      <h2>languages</h2>
+      <ul class="row">
+        <li class="coffee box">CoffeeScript</li>
+        <li class="js box">JavaScript</li>
+        <li class="scss box">SCSS</li>
+        <li class="shell box">Shell</li>
+      </ul>
+    </section>
+    <section id="stack" class="column flex-1">
+      <ul class="column flex-1">
+        <li id="client">
+          <h2>client</h2>
+          <div class="box coffee flex-1">
+            <span class="name">inventaire web app</span>
+            <span class="legend">git repo: inventaire/inventaire-client</span>
+          </div>
+          <ul id="in-browser" class="row">
+            <li class="framework flex-1 push-down">
+              <ul class="column">
+                <li class="box js">
+                  <span class="name">Handlebars</span>
+                  <span class="legend">templates</span>
+                </li>
+                <li class="box js">
+                  <span class="name">Marionette</span>
+                  <span class="legend">supercharge Backbone</span>
+                </li>
+                <li class="box js">
+                  <span class="name">Backbone</span>
+                  <span class="legend">model/view lib</span>
+                </li>
+                <li class="push-down">
+                  <ul class="row">
+                    <li class="box js flex-1">
+                      <span class="name">jQuery</span>
+                      <span class="legend">DOM manipulation</span>
+                    </li>
+                    <li class="box js flex-1">
+                      <span class="name">Underscore</span>
+                      <span class="legend">utils</span>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="libs flex-1 column">
+               <ul class="flex-1 space-around">
+                  <li class="box js">
+                    <span class="name">Leaflet</span>
+                    <span class="legend">interactive maps</span>
+                  </li>
+                  <li class="box js">
+                    <span class="name">Masonry</span>
+                    <span class="legend">tiles layout</span>
+                  </li>
+                  <li class="box js">
+                    <span class="name">Polyglot</span>
+                    <span class="legend">i18n</span>
+                  </li>
+                  <li class="box js">
+                    <span class="name">Bluebird</span>
+                    <span class="legend">promises</span>
+                  </li>
+                  <li class="box js">
+                    <span class="name">Level.js</span>
+                    <span class="legend">database</span>
+                  </li>
+                </ul>
+            </li>
+            <li class="style push-down flex-1">
+              <ul>
+                <li class="box icons">
+                  <span class="name">Font Awesome</span>
+                  <span class="legend">icons font</span>
+                </li>
+                <li class="box scss">
+                  <span class="name">display: flex</span>
+                  <span class="legend">responsive layout</span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li id="browser" class="box environment flex-1">
+          <span class="name">Browser</span>
+        </li>
+        <li id="brunch" class="box js flex-1">
+          <span class="name">Brunch</span>
+          <span class="legend">web app builder</span>
+        </li>
+        <li id="server" class="column flex-1">
+          <h2>server</h2>
+          <div class="wrapper row">
+            <ul id="internal-services" class="flex-1">
+              <li class="box database">
+                <span class="name">CouchDB</span>
+                <span class="legend">documents database</span>
+                <span class="legend">MapRreduce</span>
+                <span class="legend">replication</span>
+              </li>
+              <li class="box database">
+                <span class="name">LevelDB</span>
+                <span class="legend">cache</span>
+                <span class="legend">secondary indexes</span>
+              </li>
+              <li class="box database">
+                <span class="name">ElasticSearch</span>
+                <span class="legend">full text search</span>
+              </li>
+              <li class="box server">
+                <span class="name">Nginx</span>
+                <span class="legend">reverse proxy</span>
+                <span class="legend">file server</span>
+              </li>
+            </ul>
+            <ul id="main-server" class="flex-3 push-down">
+              <li class="box coffee flex-1">
+                <span class="name">inventaire JSON API</span>
+                <span class="legend">git repo: inventaire/inventaire</span>
+              </li>
+              <li>
+                <ul class="row wrap">
+                  <li class="box js flex-1">
+                    <span class="name">Nodemailer</span>
+                    <span class="legend">email sending</span>
+                  </li>
+                  <li class="box js flex-1">
+                    <span class="name">Passport.js</span>
+                    <span class="legend">authentification</span>
+                  </li>
+                  <li class="box js flex-1">
+                    <span class="name">Lodash</span>
+                    <span class="legend">utils</span>
+                  </li>
+                  <li class="box js flex-1">
+                    <span class="name">Bluebird</span>
+                    <span class="legend">promises</span>
+                  </li>
+                  <li class="box js flex-2">
+                    <span class="name">Express.js</span>
+                    <span class="legend">web server framework</span>
+                  </li>
+                </ul>
+              </li>
+              <li class="box js flex-1">
+                <span class="name">NodeJS</span>
+                <span class="legend">JS environment</span>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li id="deploy" class="box shell">
+          <span class="name">deployment scripts</span>
+          <span class="legend">git repo: inventaire/inventaire-deploy</span>
+        </li>
+        <li id="vps" class="flex-1 box environment">
+          <span class="name">Virtual Private Server</span>
+        </li>
+        <li id="externals" class="column">
+          <h2>external services</h2>
+          <ul class="row wrap flex-1">
+            <li class="box open-knowledge">
+              <span class="name">Wikidata</span>
+              <span class="legend">linked open data god</span>
+              <span class="legend">books, authors, genres data</span>
+            </li>
+            <li class="box open-knowledge">
+              <span class="name">Wikipedia</span>
+              <span class="legend">sum of all human knowledge</span>
+              <span class="legend">books, authors, genres articles</span>
+            </li>
+            <li class="box open-knowledge">
+              <span class="name">Wikimedia Commons</span>
+              <span class="legend">cave of media wonders</span>
+              <span class="legend">books, authors, genres images</span>
+            </li>
+            <li class="box media-container">
+              <span class="name">OpenStack Swift</span>
+              <span class="legend">media container</span>
+            </li>
+            <li class="box media-container">
+              <span class="name">IPFS</span>
+              <span class="legend">inter-planetary file system</span>
+            </li>
+            <li class="box placeholder"></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </main>
+</body>
