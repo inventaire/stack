@@ -1,7 +1,7 @@
 {
   "name": "stack",
   "version": "1.0.0",
-  "description": "",
+  "description": "inventaire stack visualization in HTML/CSS",
   "main": "index.js",
   "scripts": {
     "start": "live-server .",
@@ -9,7 +9,7 @@
     "watch": "onchange stack.scss -- npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "maxlath",
   "license": "MIT",
   "devDependencies": {
     "live-server": "~1.1.0",
