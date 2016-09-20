@@ -1,5 +1,6 @@
 body{
   color: #222;
+  font-family: sans-serif;
 }
 
 h1{
@@ -101,15 +102,11 @@ ul, ul li{
   color: white;
   background-color: #123456;
   font-weight: bold;
-  &:not(.stretch):not(.flex-1){
-    // width: 12em;
-  }
   .legend{
     color: #ddd;
     font-weight: normal;
   }
   &.wider{
-    // width: 15em;
     flex: 1;
   }
 }
@@ -118,11 +115,6 @@ ul, ul li{
 .blue{ background-color: blue }
 .yellow{ background-color: yellow }
 .magenta{ background-color: magenta }
-
-
-// #languages{
-//   width: 5em;
-// }
 
 .js{
   @include button(#fff400, #555);
