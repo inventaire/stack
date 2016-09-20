@@ -1,6 +1,7 @@
 body{
   color: #222;
   font-family: sans-serif;
+  position: relative;
 }
 
 h1{
@@ -106,9 +107,6 @@ ul, ul li{
     color: #ddd;
     font-weight: normal;
   }
-  &.wider{
-    flex: 1;
-  }
 }
 
 .red{ background-color: red }
@@ -152,6 +150,12 @@ ul, ul li{
 .icons{
   @include button(#888, white);
 }
+.media-container{
+  @include button(#5125cc, white);
+}
+.open-knowledge{
+  @include button(#339966, white);
+}
 
 #brunch{
   margin-top: 1em;
@@ -159,12 +163,8 @@ ul, ul li{
 
 #externals{
   .box{
-    @include button(#5125cc, white);
     min-width: 18em;
     flex: 1 0 0;
-  }
-  .open-knowledge{
-    @include button(#339966, white);
   }
   .placeholder{
     background-color: white;
@@ -187,4 +187,26 @@ ul, ul li{
   color: #777;
   margin-top: 2em;
   margin-bottom: 1em;
+}
+
+#you-are-here{
+  // comment-out to use
+  display: none;
+  border: 3px solid red;
+  border-radius: 3px;
+  position: absolute;
+  // adapt position from browser inspector to fit your need
+  // before tacking a snapshot
+  top: 196px;
+  right: 100px;
+  bottom: 976px;
+  left: 100px;
+  span{
+    position: absolute;
+    top: -0.9em;
+    left: 1em;
+    color: red;
+    background-color: white;
+    padding: 0 0.5em 0 0.5em;
+  }
 }
