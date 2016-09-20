@@ -4,9 +4,10 @@
   "description": "inventaire stack visualization in HTML/CSS",
   "main": "index.js",
   "scripts": {
-    "start": "live-server .",
+    "start": "npm run build && live-server .",
     "build": "./scripts/build",
     "watch": "onchange stack.scss -- npm run build",
+    "deploy": "./scripts/deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "maxlath",
