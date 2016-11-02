@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 git push origin master &&
-git branch -D gh-pages &&
+(git branch -D gh-pages || echo "no gh-pages branch to delete: passing") &&
 git checkout -b gh-pages &&
 npm run build &&
 git add index.html stack.css -f &&
