@@ -20,156 +20,168 @@
   <main class="column wrap">
     <h1><a href="https://inventaire.io" tabindex="0">inventaire.io</a> technical stack</h1>
 
-    <h2>languages</h2>
-    <section id="languages" class="row">
-      <a href="https://github.com/inventaire/inventaire/wiki/CoffeeScript" class="coffee box">CoffeeScript</a>
-      <a href="https://en.wikipedia.org/wiki/JavaScript" class="js box">JavaScript</a>
-      <a href="https://github.com/inventaire/inventaire/wiki/SCSS" class="scss box">SCSS</a>
-      <a href="https://en.wikipedia.org/wiki/Bourne_shell" class="shell box">Shell</a>
+    <section id="languages">
+      <header>
+        <h2>Languages</h2>
+      </header>
+      <div class="row">
+        <a href="https://github.com/inventaire/inventaire/wiki/CoffeeScript" class="coffee box">CoffeeScript</a>
+        <a href="https://en.wikipedia.org/wiki/JavaScript" class="js box">JavaScript</a>
+        <a href="https://github.com/inventaire/inventaire/wiki/SCSS" class="scss box">SCSS</a>
+        <a href="https://en.wikipedia.org/wiki/Bourne_shell" class="shell box">Shell</a>
+      </div>
     </section>
 
-    <h2>client</h2>
     <section id="client">
-      <a href="https://github.com/inventaire/inventaire-client" class="box coffee flex-1">
-        <span class="name">inventaire web app</span>
-        <span class="legend">git repo: inventaire/inventaire-client</span>
-      </a>
-      <ul id="in-browser" class="row">
-        <li class="framework flex-1 push-down column">
-          <a href="https://github.com/inventaire/inventaire/wiki/Handlebars" class="box js">
-            <span class="name">Handlebars</span>
-            <span class="legend">templates</span>
-          </a>
-          <a href="http://marionettejs.com/" class="box js">
-            <span class="name">Marionette</span>
-            <span class="legend">supercharge Backbone</span>
-          </a>
-          <a href="http://backbonejs.org/" class="box js">
-            <span class="name">Backbone</span>
-            <span class="legend">model/view lib</span>
-          </a>
-          <div class="push-down">
-            <div class="row">
-              <a href="http://jquery.com/" class="box js flex-1">
-                <span class="name">jQuery</span>
-                <span class="legend">DOM manipulation</span>
-              </a>
-              <a href="http://underscorejs.org/" class="box js flex-1">
-                <span class="name">Underscore</span>
-                <span class="legend">utils</span>
-              </a>
+      <header>
+        <h2>Client</h2>
+      </header>
+      <div>
+        <a href="https://github.com/inventaire/inventaire-client" class="box coffee flex-1">
+          <span class="name">inventaire web app</span>
+          <span class="legend">git repo: inventaire/inventaire-client</span>
+        </a>
+        <ul id="in-browser" class="row">
+          <li class="framework flex-1 push-down column">
+            <a href="https://github.com/inventaire/inventaire/wiki/Handlebars" class="box js">
+              <span class="name">Handlebars</span>
+              <span class="legend">templates</span>
+            </a>
+            <a href="http://marionettejs.com/" class="box js">
+              <span class="name">Marionette</span>
+              <span class="legend">supercharge Backbone</span>
+            </a>
+            <a href="http://backbonejs.org/" class="box js">
+              <span class="name">Backbone</span>
+              <span class="legend">model/view lib</span>
+            </a>
+            <div class="push-down">
+              <div class="row">
+                <a href="http://jquery.com/" class="box js flex-1">
+                  <span class="name">jQuery</span>
+                  <span class="legend">DOM manipulation</span>
+                </a>
+                <a href="http://underscorejs.org/" class="box js flex-1">
+                  <span class="name">Underscore</span>
+                  <span class="legend">utils</span>
+                </a>
+              </div>
             </div>
-          </div>
-        </li>
-        <li class="libs flex-1 column space-around">
-          <a href="http://leafletjs.com/" class="box js">
-            <span class="name">Leaflet</span>
-            <span class="legend">interactive maps</span>
-          </a>
-          <a href="http://masonry.desandro.com/" class="box js">
-            <span class="name">Masonry</span>
-            <span class="legend">tiles layout</span>
-          </a>
-          <a href="http://airbnb.io/polyglot.js" class="box js">
-            <span class="name">Polyglot</span>
-            <span class="legend">i18n</span>
-          </a>
-          <a href="http://bluebirdjs.com/" class="box js">
-            <span class="name">Bluebird</span>
-            <span class="legend">promises</span>
-          </a>
-          <a href="https://github.com/inventaire/inventaire-client/blob/943fe11140ade7a0f966aebbc9097d9d974e3cf8/package.json#L32-L43" class="box js flex-1">
-            <span class="name">many more...</span>
-          </a>
-        </li>
-        <li class="style push-down flex-1">
-          <a href="http://forkawesome.github.io" class="box icons">
-            <span class="name">Fork Awesome</span>
-            <span class="legend">icons font</span>
-          </a>
-          <a href="http://css-tricks.com/snippets/css/a-guide-to-flexbox/" class="box scss">
-            <span class="name">display: flex</span>
-            <span class="legend">responsive layout</span>
-          </a>
-        </li>
-      </ul>
-      <a href="https://en.wikipedia.org/wiki/Web_browser" id="browser" class="box environment flex-1">
-        <span class="name">Browser</span>
-      </a>
-      <a href="http://brunch.io/" id="brunch" class="box js flex-1">
-        <span class="name">Brunch</span>
-        <span class="legend">web app builder</span>
-      </a>
-    </section>
-
-    <h2>server</h2>
-    <section id="server" class="row flex-1">
-      <div id="internal-services" class="flex-1">
-        <a href="https://github.com/inventaire/inventaire/wiki/CouchDB" class="box database">
-          <span class="name">CouchDB</span>
-          <span class="legend">documents database</span>
-          <span class="legend">MapRreduce</span>
-          <span class="legend">replication</span>
+          </li>
+          <li class="libs flex-1 column space-around">
+            <a href="http://leafletjs.com/" class="box js">
+              <span class="name">Leaflet</span>
+              <span class="legend">interactive maps</span>
+            </a>
+            <a href="http://masonry.desandro.com/" class="box js">
+              <span class="name">Masonry</span>
+              <span class="legend">tiles layout</span>
+            </a>
+            <a href="http://airbnb.io/polyglot.js" class="box js">
+              <span class="name">Polyglot</span>
+              <span class="legend">i18n</span>
+            </a>
+            <a href="http://bluebirdjs.com/" class="box js">
+              <span class="name">Bluebird</span>
+              <span class="legend">promises</span>
+            </a>
+            <a href="https://github.com/inventaire/inventaire-client/blob/943fe11140ade7a0f966aebbc9097d9d974e3cf8/package.json#L32-L43" class="box js flex-1">
+              <span class="name">many more...</span>
+            </a>
+          </li>
+          <li class="style push-down flex-1">
+            <a href="http://forkawesome.github.io" class="box icons">
+              <span class="name">Fork Awesome</span>
+              <span class="legend">icons font</span>
+            </a>
+            <a href="http://css-tricks.com/snippets/css/a-guide-to-flexbox/" class="box scss">
+              <span class="name">display: flex</span>
+              <span class="legend">responsive layout</span>
+            </a>
+          </li>
+        </ul>
+        <a href="https://en.wikipedia.org/wiki/Web_browser" id="browser" class="box environment flex-1">
+          <span class="name">Browser</span>
         </a>
-        <a href="https://github.com/Level/levelup" class="box database">
-          <span class="name">LevelDB</span>
-          <span class="legend">cache</span>
-          <span class="legend">secondary indexes</span>
-        </a>
-        <a href="https://www.elastic.co/en/products/elasticsearch" class="box database">
-          <span class="name">ElasticSearch</span>
-          <span class="legend">full text search</span>
-        </a>
-        <a href="http://nginx.org/en/" class="box server">
-          <span class="name">Nginx</span>
-          <span class="legend">reverse proxy</span>
-          <span class="legend">file server</span>
+        <a href="http://brunch.io/" id="brunch" class="box js flex-1">
+          <span class="name">Brunch</span>
+          <span class="legend">web app builder</span>
         </a>
       </div>
-      <div id="main-server" class="flex-3 push-down">
-        <a href="https://github.com/inventaire/inventaire" class="box coffee flex-1">
-          <span class="name">inventaire JSON API</span>
-          <span class="legend">git repo: inventaire/inventaire</span>
-        </a>
-        <div class="row wrap">
-          <a href="https://github.com/level/levelup" class="box js flex-1">
-            <span class="name">LevelUp</span>
-            <span class="legend">deal with LevelDB</span>
+    </section>
+
+    <section id="server">
+      <header>
+        <h2>Server</h2>
+      </header>
+      <div class="row flex-1">
+        <div id="internal-services" class="flex-1">
+          <a href="https://github.com/inventaire/inventaire/wiki/CouchDB" class="box database">
+            <span class="name">CouchDB</span>
+            <span class="legend">documents database</span>
+            <span class="legend">MapRreduce</span>
+            <span class="legend">replication</span>
           </a>
-          <a href="https://nodemailer.com/" class="box js flex-1">
-            <span class="name">Nodemailer</span>
-            <span class="legend">email sending</span>
+          <a href="https://github.com/Level/levelup" class="box database">
+            <span class="name">LevelDB</span>
+            <span class="legend">cache</span>
+            <span class="legend">secondary indexes</span>
           </a>
-          <a href="http://github.com/maxlath/wikidata-sdk" class="box js flex-1">
-            <span class="name">Wikidata SDK</span>
-            <span class="legend">worki with Wikidata</span>
+          <a href="https://www.elastic.co/en/products/elasticsearch" class="box database">
+            <span class="name">ElasticSearch</span>
+            <span class="legend">full text search</span>
           </a>
-          <a href="https://github.com/inventaire/inventaire/blob/434e7836ddeaf19fcc5b54b773e906c94986af50/package.json#L31-L80" class="box js flex-1">
-            <span class="name">many more...</span>
-          </a>
-        </div>
-        <div class="row wrap">
-          <a href="http://passportjs.org/" class="box js flex-1">
-            <span class="name">Passport.js</span>
-            <span class="legend">authentification</span>
-          </a>
-          <a href="http://bluebirdjs.com/" class="box js flex-1">
-            <span class="name">Bluebird</span>
-            <span class="legend">promises</span>
-          </a>
-          <a href="http://lodash.com/" class="box js flex-1">
-            <span class="name">Lodash</span>
-            <span class="legend">utils</span>
+          <a href="http://nginx.org/en/" class="box server">
+            <span class="name">Nginx</span>
+            <span class="legend">reverse proxy</span>
+            <span class="legend">file server</span>
           </a>
         </div>
-        <a href="http://expressjs.com/" class="box js flex-3">
-          <span class="name">Express.js</span>
-          <span class="legend">web server framework</span>
-        </a>
-        <a href="http://nodejs.org/" class="box js flex-1">
-          <span class="name">NodeJS</span>
-          <span class="legend">JS environment</span>
-        </a>
+        <div id="main-server" class="flex-3 push-down">
+          <a href="https://github.com/inventaire/inventaire" class="box coffee flex-1">
+            <span class="name">inventaire JSON API</span>
+            <span class="legend">git repo: inventaire/inventaire</span>
+          </a>
+          <div class="row wrap">
+            <a href="https://github.com/level/levelup" class="box js flex-1">
+              <span class="name">LevelUp</span>
+              <span class="legend">deal with LevelDB</span>
+            </a>
+            <a href="https://nodemailer.com/" class="box js flex-1">
+              <span class="name">Nodemailer</span>
+              <span class="legend">email sending</span>
+            </a>
+            <a href="http://github.com/maxlath/wikidata-sdk" class="box js flex-1">
+              <span class="name">Wikidata SDK</span>
+              <span class="legend">worki with Wikidata</span>
+            </a>
+            <a href="https://github.com/inventaire/inventaire/blob/434e7836ddeaf19fcc5b54b773e906c94986af50/package.json#L31-L80" class="box js flex-1">
+              <span class="name">many more...</span>
+            </a>
+          </div>
+          <div class="row wrap">
+            <a href="http://passportjs.org/" class="box js flex-1">
+              <span class="name">Passport.js</span>
+              <span class="legend">authentification</span>
+            </a>
+            <a href="http://bluebirdjs.com/" class="box js flex-1">
+              <span class="name">Bluebird</span>
+              <span class="legend">promises</span>
+            </a>
+            <a href="http://lodash.com/" class="box js flex-1">
+              <span class="name">Lodash</span>
+              <span class="legend">utils</span>
+            </a>
+          </div>
+          <a href="http://expressjs.com/" class="box js flex-3">
+            <span class="name">Express.js</span>
+            <span class="legend">web server framework</span>
+          </a>
+          <a href="http://nodejs.org/" class="box js flex-1">
+            <span class="name">NodeJS</span>
+            <span class="legend">JS environment</span>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -181,36 +193,40 @@
       <span class="name">Virtual Private Server</span>
     </a>
 
-    <h2>external services</h2>
-    <section id="externals" class="row wrap flex-1">
-      <a href="https://github.com/inventaire/inventaire/wiki/data" class="box open-knowledge">
-        <span class="name">Wikidata</span>
-        <span class="legend">linked open data god</span>
-        <span class="legend">books, authors, genres data</span>
-      </a>
-      <a href="https://en.wikipedia.org/wiki/Wikipedia" class="box open-knowledge">
-        <span class="name">Wikipedia</span>
-        <span class="legend">sum of all human knowledge</span>
-        <span class="legend">books, authors, genres articles</span>
-      </a>
-      <a href="http://commons.wikimedia.org/" class="box open-knowledge">
-        <span class="name">Wikimedia Commons</span>
-        <span class="legend">cave of media wonders</span>
-        <span class="legend">books, authors, genres images</span>
-      </a>
-      <a href="https://ipfs.io" class="box media-container">
-        <span class="name">IPFS</span>
-        <span class="legend">interplanetray file system</span>
-      </a>
-      <a href="https://transifex.com/inventaire" class="box media-container">
-        <span class="name">Transifex</span>
-        <span class="legend">collaborative i18n</span>
-      </a>
-      <a href="https://en.wikipedia.org/wiki/OpenStack_Swift" class="box media-container">
-        <span class="name">OpenStack Swift</span>
-        <span class="legend">media container</span>
-      </a>
-      <div class="box placeholder"></div>
+    <section id="externals">
+      <header>
+        <h2>External services</h2>
+      </header>
+      <div class="row wrap flex-1">
+        <a href="https://github.com/inventaire/inventaire/wiki/data" class="box open-knowledge">
+          <span class="name">Wikidata</span>
+          <span class="legend">linked open data god</span>
+          <span class="legend">books, authors, genres data</span>
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Wikipedia" class="box open-knowledge">
+          <span class="name">Wikipedia</span>
+          <span class="legend">sum of all human knowledge</span>
+          <span class="legend">books, authors, genres articles</span>
+        </a>
+        <a href="http://commons.wikimedia.org/" class="box open-knowledge">
+          <span class="name">Wikimedia Commons</span>
+          <span class="legend">cave of media wonders</span>
+          <span class="legend">books, authors, genres images</span>
+        </a>
+        <a href="https://ipfs.io" class="box media-container">
+          <span class="name">IPFS</span>
+          <span class="legend">interplanetray file system</span>
+        </a>
+        <a href="https://transifex.com/inventaire" class="box media-container">
+          <span class="name">Transifex</span>
+          <span class="legend">collaborative i18n</span>
+        </a>
+        <a href="https://en.wikipedia.org/wiki/OpenStack_Swift" class="box media-container">
+          <span class="name">OpenStack Swift</span>
+          <span class="legend">media container</span>
+        </a>
+        <div class="box placeholder"></div>
+      </div>
     </section>
 
     <a id="source" href="http://github.com/inventaire/stack">source code</a>
