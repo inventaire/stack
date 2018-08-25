@@ -15,7 +15,7 @@
   "devDependencies": {
     "live-server": "^1.2.0",
     "node-sass": "~3.10.0",
-    "onchange": "~3.0.2"
+    "onchange": "^4.1.0"
   },
   "repository": {
     "type": "git",
