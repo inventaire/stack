@@ -16,5 +16,9 @@
     "live-server": "^1.2.0",
     "node-sass": "~3.10.0",
     "onchange": "~3.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/inventaire/stack"
   }
 }
