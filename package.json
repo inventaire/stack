@@ -13,7 +13,7 @@
   "author": "maxlath",
   "license": "MIT",
   "devDependencies": {
-    "live-server": "^1.2.0",
+    "live-server": "^1.2.1",
     "node-sass": "~3.10.0",
     "onchange": "~3.0.2"
   },
