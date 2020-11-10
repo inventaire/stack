@@ -91,6 +91,7 @@ ul, ul li{
 }
 
 .box{
+  position: relative;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -120,12 +121,29 @@ ul, ul li{
     color: #777;
   }
 }
-.coffee{
-  @include button(#ffae08, white);
+.svelte{
+  @include button(#ff3e00, white);
   .legend{
     color: white;
   }
 }
+.legacy{
+  position: relative;
+  margin: 0.5em 0.2em 0.2em 0.2em;
+  padding: 0.5em 0.4em 0.4em 0.4em;
+  border-radius: 3px;
+  border: 3px solid grey;
+}
+.legacy-label{
+  position: absolute;
+  top: -0.7em;
+  left: 0.8em;
+  color: grey;
+  font-weight: bold;
+  background-color: white;
+  padding: 0 0.2em;
+}
+
 .database{
   @include button(#920202, white);
   .legend{
@@ -157,8 +175,8 @@ ul, ul li{
   @include button(#339966, white);
 }
 
-#brunch{
-  margin-top: 1em;
+#browser, #webpack{
+  margin-top: 0.5em;
 }
 
 #self-hosted, #externals, #tools{

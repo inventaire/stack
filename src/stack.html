@@ -25,8 +25,8 @@
         <h2>Languages</h2>
       </header>
       <div class="row">
-        <a href="https://github.com/inventaire/inventaire/wiki/CoffeeScript" class="coffee box">CoffeeScript</a>
         <a href="https://en.wikipedia.org/wiki/JavaScript" class="js box">JavaScript</a>
+        <a href="https://svelte.dev/" class="svelte box">Svelte</a>
         <a href="https://github.com/inventaire/inventaire/wiki/SCSS" class="scss box">SCSS</a>
         <a href="https://en.wikipedia.org/wiki/Bourne_shell" class="shell box">Shell</a>
       </div>
@@ -37,36 +37,45 @@
         <h2>Client</h2>
       </header>
       <div>
-        <a href="https://github.com/inventaire/inventaire-client" class="box coffee flex-1">
+        <a href="https://github.com/inventaire/inventaire-client" class="box js flex-1">
           <span class="name">inventaire web app</span>
           <span class="legend">git repo: inventaire/inventaire-client</span>
         </a>
         <ul id="in-browser" class="row">
-          <li class="framework flex-1 push-down column">
-            <a href="https://github.com/inventaire/inventaire/wiki/Handlebars" class="box js">
-              <span class="name">Handlebars</span>
-              <span class="legend">templates</span>
+          <li class="flex-1 push-down column">
+            <a href="https://svelte.dev/" class="box svelte stretch">
+              <span class="name">Svelte</span>
+              <span class="legend">modern reactive webapp framework</span>
             </a>
-            <a href="http://marionettejs.com/" class="box js">
-              <span class="name">Marionette</span>
-              <span class="legend">supercharge Backbone</span>
-            </a>
-            <a href="http://backbonejs.org/" class="box js">
-              <span class="name">Backbone</span>
-              <span class="legend">model/view lib</span>
-            </a>
-            <div class="push-down">
-              <div class="row">
-                <a href="http://jquery.com/" class="box js flex-1">
-                  <span class="name">jQuery</span>
-                  <span class="legend">DOM manipulation</span>
-                </a>
-                <a href="http://underscorejs.org/" class="box js flex-1">
-                  <span class="name">Underscore</span>
-                  <span class="legend">utils</span>
-                </a>
+            <div class="legacy">
+              <span class="legacy-label">Legacy</span>
+              <a href="https://github.com/inventaire/inventaire/wiki/Handlebars" class="box js">
+                <span class="name">Handlebars</span>
+                <span class="legend">templates</span>
+              </a>
+              <a href="http://marionettejs.com/" class="box js">
+                <span class="name">Marionette</span>
+                <span class="legend">supercharge Backbone</span>
+              </a>
+              <a href="http://backbonejs.org/" class="box js">
+                <span class="name">Backbone</span>
+                <span class="legend">model/view lib</span>
+              </a>
+              <div class="push-down">
+                <div class="row">
+                  <a href="http://jquery.com/" class="box js flex-1">
+                    <span class="name">jQuery</span>
+                    <span class="legend">DOM manipulation</span>
+                  </a>
+                  <a href="http://underscorejs.org/" class="box js flex-1">
+                    <span class="name">Underscore</span>
+                    <span class="legend">utils</span>
+                  </a>
+                </div>
               </div>
             </div>
+          </li>
+          <li class="row stretch">
           </li>
           <li class="libs flex-1 column space-around">
             <a href="http://leafletjs.com/" class="box js">
@@ -81,7 +90,11 @@
               <span class="name">Polyglot</span>
               <span class="legend">i18n</span>
             </a>
-            <a href="https://github.com/inventaire/inventaire-client/blob/943fe11140ade7a0f966aebbc9097d9d974e3cf8/package.json#L32-L43" class="box js flex-1">
+            <a href="https://serratus.github.io/quaggaJS/" class="box js">
+              <span class="name">Quagga</span>
+              <span class="legend">barcode scanner</span>
+            </a>
+            <a href="https://github.com/inventaire/inventaire-client/blob/master/package.json" class="box js flex-1">
               <span class="name">many more...</span>
             </a>
           </li>
@@ -96,12 +109,12 @@
             </a>
           </li>
         </ul>
+        <a href="https://webpack.js.org" id="webpack" class="box js flex-1">
+          <span class="name">Webpack</span>
+          <span class="legend">web app bundler</span>
+        </a>
         <a href="https://en.wikipedia.org/wiki/Web_browser" id="browser" class="box environment flex-1">
           <span class="name">Browser</span>
-        </a>
-        <a href="http://brunch.io/" id="brunch" class="box js flex-1">
-          <span class="name">Brunch</span>
-          <span class="legend">web app builder</span>
         </a>
       </div>
     </section>
@@ -151,7 +164,7 @@
               <span class="name">WikidataJS</span>
               <span class="legend">read and edit Wikidata</span>
             </a>
-            <a href="https://github.com/inventaire/inventaire/blob/434e7836ddeaf19fcc5b54b773e906c94986af50/package.json#L31-L80" class="box js flex-1">
+            <a href="https://github.com/inventaire/inventaire/blob/master/package.json" class="box js flex-1">
               <span class="name">many more...</span>
             </a>
           </div>
