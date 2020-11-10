@@ -1,3 +1,7 @@
 #!/usr/bin/env sh
+date --iso-8601=seconds
 sed -e 's/href/target="_blank" rel="noopener" href/g' src/stack.html > dist/index.html
 node-sass src/stack.scss > dist/stack.css
+
+# Force live-server to load the latest version
+touch dist/index.html
