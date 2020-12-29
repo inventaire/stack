@@ -13,8 +13,8 @@
   "license": "MIT",
   "devDependencies": {
     "live-server": "^1.2.1",
-    "node-sass": "^5.0.0",
-    "onchange": "^7.1.0"
+    "onchange": "^7.1.0",
+    "sass": "^1.30.0"
   },
   "repository": {
     "type": "git",
