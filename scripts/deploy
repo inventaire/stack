@@ -2,7 +2,7 @@
 
 set -eu
 
-git push origin master
+git push origin main
 (git branch -D gh-pages || echo "no gh-pages branch to delete: passing")
 git checkout -b gh-pages
 npm run build
@@ -10,4 +10,4 @@ cp dist/index.html dist/stack.css .
 git add index.html stack.css -f
 git commit -m 'update build'
 git push origin --force gh-pages
-git checkout master
+git checkout main
