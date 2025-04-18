@@ -127,22 +127,6 @@ ul, ul li{
     color: white;
   }
 }
-.legacy{
-  position: relative;
-  margin: 0.5em 0.2em 0.2em 0.2em;
-  padding: 0.5em 0.4em 0.4em 0.4em;
-  border-radius: 3px;
-  border: 3px solid grey;
-}
-.legacy-label{
-  position: absolute;
-  top: -0.7em;
-  left: 0.8em;
-  color: grey;
-  font-weight: bold;
-  background-color: white;
-  padding: 0 0.2em;
-}
 
 .database{
   @include button(#920202, white);
@@ -175,8 +159,8 @@ ul, ul li{
   @include button(#339966, white);
 }
 
-#browser, #webpack{
-  margin-top: 0.5em;
+#browser{
+  margin-top: 0.4em;
 }
 
 #self-hosted, #externals, #tools{

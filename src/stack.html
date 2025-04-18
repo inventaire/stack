@@ -42,42 +42,15 @@
           <span class="legend">git repo: inventaire/inventaire-client</span>
         </a>
         <ul id="in-browser" class="row">
-          <li class="flex-1 push-down column">
+          <li class="libs flex-1 column space-around">
             <a href="https://svelte.dev/" class="box svelte stretch">
               <span class="name">Svelte</span>
-              <span class="legend">modern reactive webapp framework</span>
+              <span class="legend">reactive webapp framework</span>
             </a>
-            <div class="legacy">
-              <span class="legacy-label">Legacy</span>
-              <a href="https://github.com/inventaire/inventaire/wiki/Handlebars" class="box js">
-                <span class="name">Handlebars</span>
-                <span class="legend">templates</span>
-              </a>
-              <a href="http://marionettejs.com/" class="box js">
-                <span class="name">Marionette</span>
-                <span class="legend">supercharge Backbone</span>
-              </a>
-              <a href="http://backbonejs.org/" class="box js">
-                <span class="name">Backbone</span>
-                <span class="legend">model/view lib</span>
-              </a>
-              <div class="push-down">
-                <div class="row">
-                  <a href="http://jquery.com/" class="box js flex-1">
-                    <span class="name">jQuery</span>
-                    <span class="legend">DOM manipulation</span>
-                  </a>
-                  <a href="http://underscorejs.org/" class="box js flex-1">
-                    <span class="name">Underscore</span>
-                    <span class="legend">utils</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="row stretch">
-          </li>
-          <li class="libs flex-1 column space-around">
+            <a href="http://underscorejs.org/" class="box js flex-1">
+              <span class="name">Underscore</span>
+              <span class="legend">utils functions</span>
+            </a>
             <a href="http://leafletjs.com/" class="box js">
               <span class="name">Leaflet</span>
               <span class="legend">interactive maps</span>
@@ -86,8 +59,10 @@
               <span class="name">Polyglot</span>
               <span class="legend">i18n</span>
             </a>
-            <a href="https://serratus.github.io/quaggaJS/" class="box js">
-              <span class="name">Quagga</span>
+          </li>
+          <li class="libs flex-1 column space-around">
+            <a href="https://github.com/ericblade/quagga2" class="box js">
+              <span class="name">Quagga2</span>
               <span class="legend">barcode scanner</span>
             </a>
             <a href="https://www.papaparse.com/" class="box js">
@@ -209,6 +184,10 @@
           <span class="name">Matomo</span>
           <span class="legend">Open Analytics Platform (ex-Piwik)</span>
         </a>
+        <a href="https://postalserver.io/" class="box">
+          <span class="name">Postal</span>
+          <span class="legend">email delivery service</span>
+        </a>
         <a href="https://github.com/inventaire/inventaire-mediawiki" class="box">
           <span class="name">MediaWiki</span>
           <span class="legend">powers wiki.inventaire.io</span>
@@ -265,7 +244,7 @@
         <h2>Tools</h2>
       </header>
       <div class="row wrap flex-1">
-        <a href="https://www.docker.com/" class="box tool">
+        <a href="https://github.com/inventaire/docker-inventaire" class="box tool">
           <span class="name">Docker</span>
           <span class="legend">containerization technology</span>
         </a>
@@ -273,9 +252,9 @@
           <span class="name">lev2</span>
           <span class="legend">A CLI and a REPL for managing LevelDB instances</span>
         </a>
-        <a href="https://github.com/maxlath/wikidata-cli" class="box tool js">
-          <span class="name">wikidata-cli</span>
-          <span class="legend">read and edit Wikidata from the command line </span>
+        <a href="https://github.com/maxlath/wikibase-cli" class="box tool js">
+          <span class="name">wikibase-cli</span>
+          <span class="legend">read and edit Wikidata from the command line</span>
         </a>
         <a href="https://github.com/taskrabbit/elasticsearch-dump" class="box tool js">
           <span class="name">elasticdump</span>
