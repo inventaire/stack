@@ -1,0 +1,284 @@
+body {
+  color: #222;
+  font-family: sans-serif;
+  position: relative;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.6em;
+  margin: 1.5em 0 0.2em 0;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #777;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 60em;
+}
+
+ul, ul li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.stretch {
+  align-self: stretch;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.push-down {
+  margin-top: auto;
+}
+
+.flex-1 {
+  flex: 1 0 auto;
+}
+
+.flex-2 {
+  flex: 2 0 auto;
+}
+
+.flex-3 {
+  flex: 3 0 auto;
+}
+
+#stack {
+  flex: 1 0 auto;
+  display: flex;
+}
+
+.box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  white-space: nowrap;
+  padding: 1em;
+  text-align: center;
+  border-radius: 3px;
+  margin: 0.2em;
+  color: white;
+  background-color: #5125cc;
+  font-weight: bold;
+}
+.box .legend {
+  color: #ddd;
+  font-weight: normal;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.magenta {
+  background-color: magenta;
+}
+
+.js {
+  background-color: #fff400;
+  transition: background-color 0.5s;
+  transition: box-shadow 0.3s;
+  color: #555;
+}
+.js:hover, .js:focus {
+  background-color: #f0e500;
+  box-shadow: -1px 1px 4px 1px rgba(136, 136, 136, 0.3) inset, 1px -1px 4px 1px rgba(136, 136, 136, 0.3) inset;
+}
+.js .legend {
+  color: #777;
+}
+
+.svelte {
+  background-color: #ff3e00;
+  transition: background-color 0.5s;
+  transition: box-shadow 0.3s;
+  color: white;
+}
+.svelte:hover, .svelte:focus {
+  background-color: #f03a00;
+  box-shadow: -1px 1px 4px 1px rgba(136, 136, 136, 0.3) inset, 1px -1px 4px 1px rgba(136, 136, 136, 0.3) inset;
+}
+.svelte .legend {
+  color: white;
+}
+
+.database {
+  background-color: #920202;
+  transition: background-color 0.5s;
+  transition: box-shadow 0.3s;
+  color: white;
+}
+.database:hover, .database:focus {
+  background-color: #830202;
+  box-shadow: -1px 1px 4px 1px rgba(136, 136, 136, 0.3) inset, 1px -1px 4px 1px rgba(136, 136, 136, 0.3) inset;
+}
+.database .legend {
+  color: white;
+}
+
+.server {
+  background-color: #561231;
+  transition: background-color 0.5s;
+  transition: box-shadow 0.3s;
+  color: white;
+}
+.server:hover, .server:focus {
+  background-color: #490f2a;
+  box-shadow: -1px 1px 4px 1px rgba(136, 136, 136, 0.3) inset, 1px -1px 4px 1px rgba(136, 136, 136, 0.3) inset;
+}
+
+.environment {
+  background-color: #444;
+  transition: background-color 0.5s;
+  transition: box-shadow 0.3s;
+  color: ddd;
+}
+.environment:hover, .environment:focus {
+  background-color: #3c3c3c;
+  box-shadow: -1px 1px 4px 1px rgba(136, 136, 136, 0.3) inset, 1px -1px 4px 1px rgba(136, 136, 136, 0.3) inset;
+}
+
+.scss {
+  background-color: #319cc2;
+  transition: background-color 0.5s;
+  transition: box-shadow 0.3s;
+  color: white;
+}
+.scss:hover, .scss:focus {
+  background-color: #2e92b6;
+  box-shadow: -1px 1px 4px 1px rgba(136, 136, 136, 0.3) inset, 1px -1px 4px 1px rgba(136, 136, 136, 0.3) inset;
+}
+
+.shell {
+  background-color: #89e051;
+  transition: background-color 0.5s;
+  transition: box-shadow 0.3s;
+  color: white;
+}
+.shell:hover, .shell:focus {
+  background-color: #80de44;
+  box-shadow: -1px 1px 4px 1px rgba(136, 136, 136, 0.3) inset, 1px -1px 4px 1px rgba(136, 136, 136, 0.3) inset;
+}
+.shell .legend {
+  color: white;
+}
+
+.icons {
+  background-color: #888;
+  transition: background-color 0.5s;
+  transition: box-shadow 0.3s;
+  color: white;
+}
+.icons:hover, .icons:focus {
+  background-color: gray;
+  box-shadow: -1px 1px 4px 1px rgba(136, 136, 136, 0.3) inset, 1px -1px 4px 1px rgba(136, 136, 136, 0.3) inset;
+}
+
+.open-knowledge {
+  background-color: #339966;
+  transition: background-color 0.5s;
+  transition: box-shadow 0.3s;
+  color: white;
+}
+.open-knowledge:hover, .open-knowledge:focus {
+  background-color: #2f8e5e;
+  box-shadow: -1px 1px 4px 1px rgba(136, 136, 136, 0.3) inset, 1px -1px 4px 1px rgba(136, 136, 136, 0.3) inset;
+}
+
+#browser {
+  margin-top: 0.4em;
+}
+
+#self-hosted .box, #externals .box, #tools .box {
+  min-width: 18em;
+  flex: 1 0 0;
+}
+#self-hosted .placeholder, #externals .placeholder, #tools .placeholder {
+  background-color: white;
+}
+
+#languages {
+  margin: auto;
+}
+#languages .row {
+  justify-content: space-around;
+}
+#languages .row .box {
+  width: 7em;
+  height: 4em;
+  padding: 0 0.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#source {
+  text-align: center;
+  text-decoration: underline;
+  color: #777;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+#you-are-here {
+  display: none;
+  border: 3px solid red;
+  border-radius: 3px;
+  position: absolute;
+  top: 196px;
+  right: 100px;
+  bottom: 976px;
+  left: 100px;
+}
+#you-are-here span {
+  position: absolute;
+  top: -0.9em;
+  left: 1em;
+  color: red;
+  background-color: white;
+  padding: 0 0.5em 0 0.5em;
+}
