@@ -11,10 +11,12 @@
   },
   "author": "maxlath",
   "license": "MIT",
+  "dependencies": {
+    "sass": "^1.30.0"
+  },
   "devDependencies": {
     "live-server": "^1.2.1",
-    "onchange": "^7.1.0",
-    "sass": "^1.30.0"
+    "onchange": "^7.1.0"
   },
   "repository": {
     "type": "git",
