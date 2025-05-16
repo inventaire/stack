@@ -102,7 +102,7 @@ ul, ul li{
   border-radius: 3px;
   margin: 0.2em;
   color: white;
-  background-color: #123456;
+  background-color: #5125cc;
   font-weight: bold;
   .legend{
     color: #ddd;
@@ -151,9 +151,6 @@ ul, ul li{
 }
 .icons{
   @include button(#888, white);
-}
-.media-container{
-  @include button(#5125cc, white);
 }
 .open-knowledge{
   @include button(#339966, white);
