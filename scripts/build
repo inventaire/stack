@@ -1,5 +1,9 @@
 #!/usr/bin/env sh
+set -eu
+
 date --iso-8601=seconds
+
+mkdir -p dist
 sed -e 's/href/target="_blank" rel="noopener" href/g' src/stack.html > dist/index.html
 sass src/stack.scss > dist/stack.css
 
